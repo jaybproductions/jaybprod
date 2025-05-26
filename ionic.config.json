@@ -1,0 +1,7 @@
+{
+  "name": "newportfolio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
