@@ -64,13 +64,13 @@ export default function About() {
         >
           <h1 className="text-4xl font-bold mb-6">About Me</h1>
           <p className="text-lg leading-relaxed mb-4">
-            I'm a <strong>Senior Software Engineer</strong> and <strong>Tech Lead</strong> at a software ERP company. I specialize in designing scalable systems, leading cross-functional teams, and delivering robust backend and frontend solutions.
+            {`I'm`} a <strong>Senior Software Engineer</strong> and <strong>Tech Lead</strong> at a software ERP company. I specialize in designing scalable systems, leading cross-functional teams, and delivering robust backend and frontend solutions.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I graduated <strong>Summa Cum Laude</strong> from <strong>Southern New Hampshire University</strong> with a Bachelor’s in Computer Science, and I’m currently pursuing my Master’s in Software Engineering at <strong>Auburn University</strong>.
+            I graduated <strong>Summa Cum Laude</strong> from <strong>Southern New Hampshire University</strong> with a {`Bachelor’s`} in Computer Science, and {`I’m currently pursuing my Master’s`} in Software Engineering at <strong>Auburn University</strong>.
           </p>
           <p className="text-lg leading-relaxed">
-            I'm passionate about clean code, AI systems, and solving real-world problems with thoughtful architecture and modern technologies. Outside of work and school, I enjoy working on personal projects and constantly learning new tools and patterns.
+            {`I'm`} passionate about clean code, AI systems, and solving real-world problems with thoughtful architecture and modern technologies. Outside of work and school, I enjoy working on personal projects and constantly learning new tools and patterns.
           </p>
 
           <div className="border-l-4 border-blue-500 pl-4 my-6 text-left italic text-gray-700 dark:text-gray-300">

@@ -5,7 +5,16 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 
-export default function ProjectsGrid({ repos }: { repos: any[] }) {
+type Project = {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string;
+  language: string;
+  stargazers_count: number;
+};
+
+export default function ProjectsGrid({ repos }: { repos: Project[] }) {
   return (
     <main className="min-h-screen px-6 py-12 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white">
       <div className="max-w-5xl mx-auto">

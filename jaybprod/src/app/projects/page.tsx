@@ -1,6 +1,24 @@
 // app/projects/page.tsx
 import ProjectsGrid from '../../components/ProjectsGrid';
 
+type Project = {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string;
+  language: string;
+  stargazers_count: number;
+};
+
+type Repo = {
+  id: number;
+  name: string;
+  fork: boolean;
+  archived: boolean;
+  stargazers_count: number;
+}
+
+
 async function getRepos() {
   const res = await fetch('https://api.github.com/users/jaybproductions/repos', {
     headers: {
@@ -14,8 +32,8 @@ async function getRepos() {
   const data = await res.json();
 
   return data
-    .filter((repo: any) => !repo.fork && !repo.archived)
-    .sort((a: any, b: any) => b.stargazers_count - a.stargazers_count);
+    .filter((repo: Repo) => !repo.fork && !repo.archived)
+    .sort((a: Repo, b: Repo) => b.stargazers_count - a.stargazers_count);
 }
 
 export default async function ProjectsPage() {
