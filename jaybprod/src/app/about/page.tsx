@@ -18,7 +18,7 @@ export default function About() {
           transition={{ duration: 0.7 }}
           className="text-5xl font-extrabold tracking-tight mb-4"
         >
-          Hi, I'm Jacob
+          {`Hi, I'm Chris`}
         </motion.h1>
 
         <motion.p

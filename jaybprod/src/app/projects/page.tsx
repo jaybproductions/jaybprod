@@ -1,15 +1,6 @@
 // app/projects/page.tsx
 import ProjectsGrid from '../../components/ProjectsGrid';
 
-type Project = {
-  id: number;
-  name: string;
-  html_url: string;
-  description: string;
-  language: string;
-  stargazers_count: number;
-};
-
 type Repo = {
   id: number;
   name: string;
